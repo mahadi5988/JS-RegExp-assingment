@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Expression Validator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Expression Validator</h3>
+        <label for="expression-type">Choose an Expression to validate</label>
+        <select id="expression-type">
+            <option value="email">Email</option>
+            <option value="phone">Phone Number</option>
+            <option value="post-code">Post Code</option>
+            <option value="zip-code">Zip Code</option>
+
+        </select>
+        <hr>
+        <label for="user-input">Enter the Entities to Validate</label>
+        <input type="text" id="user-input" placeholder="Enter here">
+        <button id="generate-btn">Validate</button>
+        <hr>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html>
